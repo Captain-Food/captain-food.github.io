@@ -27,12 +27,7 @@
   <link rel="alternate" hreflang="he" href="https://join.captain.food/he/privacy.html" />
   <link rel="alternate" hreflang="x-default" href="https://join.captain.food/confidentialite.html" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap"
-    rel="stylesheet"
-  />
+  <link rel="stylesheet" href="assets/fonts.css" />
   <link rel="stylesheet" href="styles.css" />
   <style>
     .legal { padding-block: clamp(2.5rem, 6vw, 4rem); }
@@ -63,6 +58,7 @@
         <a class="chip" href="tarifs.html" data-i18n="nav.chip.pricing">Tarifs</a>
         <a class="chip" href="demo/" data-i18n="nav.chip.mockups">Maquettes</a>
         <a class="chip" href="index.html#faq" data-i18n="nav.chip.faq">FAQ</a>
+        <a class="chip" href="mentions-legales.html" data-i18n="nav.chip.legal">Mentions légales</a>
       </div>
     </nav>
   </header>
@@ -72,7 +68,7 @@
       <a class="btn btn-navy btn-sm back-link" href="index.html" data-i18n="shared.back_home">← Retour à l'accueil</a>
       <h1 data-i18n="privacy.h1">Politique de confidentialité</h1>
       <p class="fine-print" data-i18n="legal.fr_prevails">Seule la version française de cette page fait foi ; les traductions sont fournies à titre d'information.</p>
-      <p class="updated" data-i18n="privacy.updated">Dernière mise à jour : juillet 2026.</p>
+      <p class="updated" data-i18n="privacy.updated">Dernière mise à jour : août 2026.</p>
 
       <p data-i18n-html="privacy.intro">
         La présente politique décrit comment <span class="cf-name">Captain<span class="cf-dot">.</span>Food</span> (ci-après « nous »)
@@ -90,6 +86,13 @@
         structure porteuse du projet <span class="cf-name">Captain<span class="cf-dot">.</span>Food</span>. Pour toute question relative à
         tes données, tu peux nous écrire à
         <a href="mailto:miam@captain.food">miam@captain.food</a>.
+      </p>
+      <p data-i18n-html="privacy.s1_dpo">
+        Nous n'avons pas désigné de délégué à la protection des données (DPO) :
+        au vu de la nature et du volume des données traitées dans ce pilote, les
+        conditions de désignation obligatoire prévues à l'article 37 du RGPD ne
+        sont pas réunies. Tes demandes sont traitées directement par l'équipe du
+        projet, à <a href="mailto:miam@captain.food">miam@captain.food</a>.
       </p>
 
       <h2 data-i18n="privacy.s2_title">2. Données collectées</h2>
@@ -131,10 +134,28 @@
       <h2 data-i18n="privacy.s5_title">5. Destinataires des données</h2>
       <p data-i18n-html="privacy.s5_body">
         Tes données sont accessibles uniquement à l'équipe du projet <span class="cf-name">Captain<span class="cf-dot">.</span>Food</span>.
-        Le formulaire est traité par notre prestataire technique
-        <strong>Formspree</strong> (transmission et stockage des messages du
-        formulaire). Nous ne vendons, ne louons et ne cédons tes données à aucun
-        tiers à des fins commerciales.
+        Pour faire fonctionner ce site, nous nous appuyons sur les prestataires
+        techniques suivants, qui traitent des données pour notre compte :
+      </p>
+      <ul>
+        <li data-i18n-html="privacy.s5_li1">
+          <strong>Formspree</strong> (Formspree, Inc., États-Unis) — transmission
+          et stockage des messages du formulaire ;
+        </li>
+        <li data-i18n-html="privacy.s5_li2">
+          <strong>GitHub Pages</strong> (GitHub, Inc., États-Unis) — hébergement
+          du site ; à ce titre, des données techniques de connexion (adresse IP,
+          journaux de serveur) sont traitées ;
+        </li>
+        <li data-i18n-html="privacy.s5_li3">
+          <strong>Cloudflare Web Analytics</strong> (Cloudflare, Inc.,
+          États-Unis) — mesure d'audience, sans cookie ni identifiant
+          publicitaire.
+        </li>
+      </ul>
+      <p data-i18n="privacy.s5_nosale">
+        Nous ne vendons, ne louons et ne cédons tes données à aucun tiers à des
+        fins commerciales.
       </p>
       <p data-i18n-html="privacy.s5_whatsapp">
         Si tu rejoins notre communauté d'échange sur <strong>WhatsApp</strong>
@@ -174,8 +195,34 @@
         (HTTPS).
       </p>
 
-      <h2 data-i18n="privacy.s9_title">9. Modifications</h2>
-      <p data-i18n="privacy.s9_body">
+      <h2 data-i18n="privacy.s9_title">9. Reprise du projet par une nouvelle structure</h2>
+      <p data-i18n-html="privacy.s9_p1">
+        <span class="cf-name">Captain<span class="cf-dot">.</span>Food</span> est aujourd'hui porté par l'association
+        <strong>Caring Hope Foundation</strong>. Le projet a vocation à être
+        repris par une <strong>structure dédiée</strong> — une société
+        coopérative d'intérêt collectif (SCIC) ou une structure équivalente,
+        visant l'agrément ESUS — dès que celle-ci sera créée.
+      </p>
+      <p data-i18n-html="privacy.s9_p2">
+        On te le dit maintenant, parce que ça concerne tes données :
+        <strong>le jour où cette structure existera, les données collectées
+        pendant le pilote lui seront transmises</strong>, pour la seule et même
+        finalité — poursuivre l'échange avec toi au sujet de <span class="cf-name">Captain<span class="cf-dot">.</span>Food</span>.
+        Ni les finalités, ni les durées de conservation, ni tes droits ne
+        changeront.
+      </p>
+      <p data-i18n-html="privacy.s9_p3">
+        Quand ce transfert aura lieu, nous t'en informerons individuellement par
+        email, en te donnant le nom, la forme juridique et les coordonnées de la
+        nouvelle structure — et tu pourras à ce moment-là retirer ton
+        consentement ou demander la suppression de tes données, sans avoir à te
+        justifier. Si tu ne veux pas attendre, tu peux nous le dire dès
+        aujourd'hui à <a href="mailto:miam@captain.food">miam@captain.food</a> :
+        on ne transmettra rien te concernant.
+      </p>
+
+      <h2 data-i18n="privacy.s10_title">10. Modifications</h2>
+      <p data-i18n="privacy.s10_body">
         Cette politique pourra évoluer avec le projet. Toute mise à jour sera
         publiée sur cette page.
       </p>

@@ -8,10 +8,11 @@
      2. every page must expose the language switcher (header) and the footer
         picker slot filled by i18n.js;
      3. no same-origin console errors on any page;
-     4. sample pages must actually translate via ?lang=en (html[lang] flips).
+     4. sample pages must actually translate via ?lang=en (html[lang] flips);
+     5. no authored page hot-links Google Fonts (the faces are self-hosted).
    Run: python3 -m http.server 8123 &  then  node tools/checks/ui-consistency.mjs
    (CI: .github/workflows/ui-check.yml) */
-import { readdirSync } from "node:fs";
+import { readdirSync, readFileSync } from "node:fs";
 import { chromium } from "playwright";
 
 const BASE = process.env.UI_CHECK_BASE || "http://localhost:8123";
@@ -32,6 +33,29 @@ try {
 
 const failures = [];
 const captainHeights = {};
+
+// 5. Google Fonts must never come back. Inter and Poppins are self-hosted
+//    (assets/fonts.css + assets/fonts/*.woff2) so that a visitor's IP address
+//    never reaches Google LLC before any interaction. The browser pass below
+//    CANNOT catch a regression here — it aborts every third-party request by
+//    design and would stay green while every page re-linked to the CDN — so
+//    this is a static scan of the AUTHORED pages (the generated /<lang>/ tree
+//    is derived from them, and its own drift gate is `i18n.py pages --check`).
+const authoredPages = [
+  ...readdirSync(root).filter((f) => f.endsWith(".html")),
+  ...["demo", "prospection"].flatMap((dir) =>
+    readdirSync(root + dir).filter((f) => f.endsWith(".html")).map((f) => `${dir}/${f}`)
+  ),
+];
+for (const file of authoredPages) {
+  if (/fonts\.g(oogleapis|static)\.com/.test(readFileSync(root + file, "utf8"))) {
+    failures.push(
+      `${file}: hot-links Google Fonts (fonts.g*.com) — the fonts are self-hosted; ` +
+        `link "assets/fonts.css" instead ("../assets/fonts.css" from demo/ and ` +
+        `prospection/). See docs/SITE.md, section "Fonts (self-hosted, on purpose)".`
+    );
+  }
+}
 
 const browser = await chromium.launch(executablePath ? { executablePath } : {});
 const context = await browser.newContext({ viewport: { width: 1280, height: 900 } });

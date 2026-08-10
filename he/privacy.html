@@ -26,9 +26,7 @@
   <link rel="alternate" hreflang="ar-LB" href="https://join.captain.food/ar-lb/privacy.html" />
   <link rel="alternate" hreflang="he" href="https://join.captain.food/he/privacy.html" />
   <link rel="alternate" hreflang="x-default" href="https://join.captain.food/confidentialite.html" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Poppins:wght@600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/fonts.css">
   <link rel="stylesheet" href="/styles.css">
   <style>
     .legal { padding-block: clamp(2.5rem, 6vw, 4rem); }
@@ -59,6 +57,7 @@
         <a class="chip" href="/he/pricing.html" data-i18n="nav.chip.pricing">מחירים</a>
         <a class="chip" href="/demo/" data-i18n="nav.chip.mockups">מוקאפים</a>
         <a class="chip" href="/he/#faq" data-i18n="nav.chip.faq">שאלות ותשובות</a>
+        <a class="chip" href="/he/legal-notice.html" data-i18n="nav.chip.legal">מידע משפטי</a>
       </div>
     </nav>
   </header>
@@ -67,10 +66,11 @@
       <a class="btn btn-navy btn-sm back-link" href="/he/" data-i18n="shared.back_home">← חזרה לדף הבית</a>
       <h1 data-i18n="privacy.h1">מדיניות פרטיות</h1>
       <p class="fine-print" data-i18n="legal.fr_prevails">רק הגרסה הצרפתית של עמוד זה מחייבת; התרגומים ניתנים לידיעה בלבד.</p>
-      <p class="updated" data-i18n="privacy.updated">עדכון אחרון: יולי 2026.</p>
+      <p class="updated" data-i18n="privacy.updated">עדכון אחרון: אוגוסט 2026.</p>
       <p data-i18n-html="privacy.intro">מדיניות זו מתארת כיצד <span class="cf-name">Captain<span class="cf-dot">.</span>Food</span> (להלן ״אנחנו״) אוספת ומעבדת את הנתונים האישיים שלך כאשר אתה פונה אלינו דרך הטופס באתר זה, במסגרת הפיילוט המקומי המתקיים ב-Tours. אנחנו מתחייבים לכבד את התקנה הכללית להגנת המידע (RGPD, ה-GDPR האירופי) ואת החוק הצרפתי ״Informatique et Libertés״.</p>
       <h2 data-i18n="privacy.s1_title">1. האחראי על עיבוד הנתונים</h2>
       <p data-i18n-html="privacy.s1_body">עיבוד הנתונים מתבצע על ידי <strong>עמותת Caring Hope Foundation</strong> — עמותה הפועלת לפי loi du 1<sup>er</sup> juillet 1901 (חוק העמותות הצרפתי משנת 1901), הרשומה תחת המספר <strong>RNA W372020229</strong>, הגוף הנושא את פרויקט <span class="cf-name">Captain<span class="cf-dot">.</span>Food</span>. לכל שאלה בנוגע לנתונים שלך, אפשר לכתוב לנו ל-<a href="mailto:miam@captain.food">miam@captain.food</a>.</p>
+      <p data-i18n-html="privacy.s1_dpo">לא מינינו ממונה על הגנת הפרטיות (DPO): לאור אופי הנתונים והיקפם בפיילוט הזה, תנאי המינוי המחייב שבסעיף 37 ל-GDPR אינם מתקיימים. הפניות שלך מטופלות ישירות על ידי צוות הפרויקט, בכתובת <a href="mailto:miam@captain.food">miam@captain.food</a>.</p>
       <h2 data-i18n="privacy.s2_title">2. הנתונים שנאספים</h2>
       <p data-i18n="privacy.s2_intro">דרך טופס ״הצטרפות לפיילוט״ אנחנו אוספים:</p>
       <ul>
@@ -87,7 +87,13 @@
       <h2 data-i18n="privacy.s4_title">4. הבסיס המשפטי</h2>
       <p data-i18n-html="privacy.s4_body">העיבוד מבוסס על <strong>הסכמתך</strong>, הניתנת באמצעות תיבת הסימון שבטופס. אתה יכול לחזור בך מהסכמה זו בכל עת (ראה סעיף 7).</p>
       <h2 data-i18n="privacy.s5_title">5. מי מקבל גישה לנתונים</h2>
-      <p data-i18n-html="privacy.s5_body">הנתונים שלך נגישים אך ורק לצוות פרויקט <span class="cf-name">Captain<span class="cf-dot">.</span>Food</span>. הטופס מעובד על ידי ספק השירות הטכני שלנו <strong>Formspree</strong> (העברה ואחסון של הודעות הטופס). אנחנו לא מוכרים, לא משכירים ולא מעבירים את הנתונים שלך לשום צד שלישי למטרות מסחריות.</p>
+      <p data-i18n-html="privacy.s5_body">הנתונים שלך נגישים אך ורק לצוות פרויקט <span class="cf-name">Captain<span class="cf-dot">.</span>Food</span>. כדי להפעיל את האתר הזה אנחנו נעזרים בספקים הטכניים הבאים, שמעבדים נתונים בשמנו:</p>
+      <ul>
+        <li data-i18n-html="privacy.s5_li1"><strong>Formspree</strong> (‏Formspree, Inc.‎, ארצות הברית) — העברה ואחסון של הודעות הטופס;</li>
+        <li data-i18n-html="privacy.s5_li2"><strong>GitHub Pages</strong> (‏GitHub, Inc.‎, ארצות הברית) — אחסון האתר; במסגרת זו מעובדים נתוני חיבור טכניים (כתובת IP, יומני שרת);</li>
+        <li data-i18n-html="privacy.s5_li3"><strong>Cloudflare Web Analytics</strong> (‏Cloudflare, Inc.‎, ארצות הברית) — מדידת תנועה, בלי עוגייה ובלי מזהה פרסומי.</li>
+      </ul>
+      <p data-i18n="privacy.s5_nosale">אנחנו לא מוכרים, לא משכירים ולא מעבירים את הנתונים שלך לשום צד שלישי למטרות מסחריות.</p>
       <p data-i18n-html="privacy.s5_whatsapp">אם תצטרף לקהילת השיח שלנו ב-<strong>WhatsApp</strong> (ערוץ אופציונלי), ההודעות שלך שם מעובדות על ידי WhatsApp/Meta בהתאם לתנאי השימוש שלה. אנחנו לעולם לא מפרסמים שם את פרטי הקשר שלך.</p>
       <h2 data-i18n="privacy.s6_title">6. משך שמירת הנתונים</h2>
       <p data-i18n-html="privacy.s6_body">הנתונים שלך נשמרים למשך תקופת הפיילוט ולכל היותר <strong>24 חודשים</strong> אחרי הקשר האחרון שלך איתנו, ואז נמחקים. אתה יכול לבקש את מחיקתם לפני מועד זה.</p>
@@ -97,8 +103,12 @@
       <p data-i18n-html="privacy.s7_cnil">אם לאחר שפנית אלינו אתה סבור שזכויותיך אינן נשמרות, אתה רשאי להגיש תלונה ל-CNIL, רשות הגנת המידע הצרפתית (<a href="https://www.cnil.fr" rel="noopener" target="_blank">www.cnil.fr</a>).</p>
       <h2 data-i18n="privacy.s8_title">8. אבטחה</h2>
       <p data-i18n="privacy.s8_body">אנחנו נוקטים אמצעים סבירים כדי להגן על הנתונים שלך מפני גישה לא מורשית. התקשורת עם אתר זה מוצפנת (HTTPS).</p>
-      <h2 data-i18n="privacy.s9_title">9. שינויים</h2>
-      <p data-i18n="privacy.s9_body">מדיניות זו עשויה להתעדכן עם התפתחות הפרויקט. כל עדכון יפורסם בעמוד זה.</p>
+      <h2 data-i18n="privacy.s9_title">9. העברת הפרויקט לגוף חדש</h2>
+      <p data-i18n-html="privacy.s9_p1"><span class="cf-name">Captain<span class="cf-dot">.</span>Food</span> נישא כיום על ידי עמותת <strong>Caring Hope Foundation</strong>. הפרויקט מיועד לעבור ל<strong>גוף ייעודי</strong> — אגודה שיתופית לאינטרס הכלל (SCIC) או גוף מקביל, שחותר לקבל את ההסמכה הצרפתית ESUS — ברגע שזה יוקם.</p>
+      <p data-i18n-html="privacy.s9_p2">אנחנו אומרים לך את זה עכשיו, כי זה נוגע לנתונים שלך: <strong>ביום שבו הגוף הזה יתקיים, הנתונים שנאספו במהלך הפיילוט יועברו אליו</strong>, לאותה מטרה אחת ויחידה — להמשיך את הקשר איתך בנוגע ל<span class="cf-name">Captain<span class="cf-dot">.</span>Food</span>. לא המטרות, לא תקופות השמירה ולא הזכויות שלך ישתנו.</p>
+      <p data-i18n-html="privacy.s9_p3">כשההעברה הזאת תתבצע, נודיע לך אישית במייל, ונמסור לך את השם, הצורה המשפטית ופרטי הקשר של הגוף החדש — ואז תוכל למשוך את הסכמתך או לבקש למחוק את הנתונים שלך, בלי צורך להסביר. אם אתה מעדיף לא לחכות, אפשר לומר לנו כבר היום בכתובת <a href="mailto:miam@captain.food">miam@captain.food</a>: לא נעביר דבר שנוגע אליך.</p>
+      <h2 data-i18n="privacy.s10_title">10. שינויים</h2>
+      <p data-i18n="privacy.s10_body">מדיניות זו עשויה להתעדכן עם התפתחות הפרויקט. כל עדכון יפורסם בעמוד זה.</p>
       <p style="margin-top:2rem;">
         <a class="btn btn-navy" href="/he/" data-i18n="shared.back_home">← חזרה לדף הבית</a>
       </p>

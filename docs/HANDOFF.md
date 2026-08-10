@@ -42,6 +42,7 @@
 - Pages SEO (Tours) : `alternative-uber-eats-tours`, `alternative-deliveroo-tours`, `restaurant-sans-commission-tours`, `commande-en-ligne-restaurant-tours`, `click-and-collect-tours`, `livraison-ethique-tours`, `restaurants-tours-indre-et-loire`.
 - Autres pages : `tarifs`, `manifeste`, `financement`, `livraison`, `confidentialite`, `mentions-legales`, `404`.
 - `styles.css` — feuille de style globale (tokens `:root` : `--navy #0e3a5f`, `--orange #e8613a`, `--ink`, polices Poppins/Inter…).
+- `assets/fonts.css` + `assets/fonts/*.woff2` — polices **auto-hébergées** (Inter/Poppins, licence SIL OFL 1.1) : plus aucun appel à `fonts.googleapis.com`/`gstatic.com`, donc plus aucune IP de visiteur envoyée à Google. Ne jamais remettre un lien Google Fonts dans une nouvelle page (voir `SITE.md`, section « Fonts »).
 - `partials.js` — injecte le **footer partagé** + le **FAB WhatsApp** (via `data-shared-footer`).
 - `/demo/` — **maquettes cliquables** (prototypes jetables, `noindex`) :
   - `index.html` (sélecteur), `client.html`, `resto.html`, `livreur.html`
@@ -109,6 +110,17 @@ Le fondateur veut savoir si on peut **proposer d'installer la démo en PWA** sur
 
 ## 7. Autres points ouverts
 
+- **Juridique — ce qui reste bloqué sur le fondateur** (première version des correctifs RGPD livrée
+  en août 2026 : section « reprise par une nouvelle structure », liste complète des destinataires,
+  mention « pas de DPO requis », polices auto-hébergées, lien « Mentions légales » dans le menu haut) :
+  - [ ] **Siège social** (adresse non personnelle) et **directeur de la publication** dans
+        `mentions-legales.html` — obligatoires (LCEN) ; **ne rien inventer**, seul le fondateur peut les fournir.
+  - [ ] **Section « transferts hors UE »** dans `confidentialite.html` : il faut d'abord **vérifier**,
+        prestataire par prestataire (Formspree, GitHub, Cloudflare), si la base est le **Data Privacy
+        Framework** ou des **clauses contractuelles types**. Publier une affirmation fausse est pire
+        que ne rien écrire — d'où l'absence volontaire de cette section pour l'instant.
+  - [ ] Le jour où la **SCIC** (ou structure équivalente) existe : informer individuellement par email
+        les personnes du pilote, comme la section 9 de la politique s'y engage.
 - **Branche par défaut & Pages** : basculer défaut **et** source Pages sur `main`, puis supprimer les branches `claude/…` (voir §2).
 - **Image « casse la grille »** : la version FR sans texte est intégrée sur `tarifs`. Si une meilleure version arrive, remplacer `assets/captain-killgrid.webp`.
 - **Détail cosmétique** : sur le bouton Uber Eats du simulateur, le libellé « Uber Eats » passe encore sur 2 lignes (le `%` est réglé). À lisser si souhaité (`white-space:nowrap` sur le libellé).

@@ -26,9 +26,7 @@
   <link rel="alternate" hreflang="ar-LB" href="https://join.captain.food/ar-lb/privacy.html" />
   <link rel="alternate" hreflang="he" href="https://join.captain.food/he/privacy.html" />
   <link rel="alternate" hreflang="x-default" href="https://join.captain.food/confidentialite.html" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Poppins:wght@600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/fonts.css">
   <link rel="stylesheet" href="/styles.css">
   <style>
     .legal { padding-block: clamp(2.5rem, 6vw, 4rem); }
@@ -59,6 +57,7 @@
         <a class="chip" href="/pt/precos.html" data-i18n="nav.chip.pricing">Preços</a>
         <a class="chip" href="/demo/" data-i18n="nav.chip.mockups">Maquetes</a>
         <a class="chip" href="/pt/#faq" data-i18n="nav.chip.faq">FAQ</a>
+        <a class="chip" href="/pt/aviso-legal.html" data-i18n="nav.chip.legal">Aviso legal</a>
       </div>
     </nav>
   </header>
@@ -67,10 +66,11 @@
       <a class="btn btn-navy btn-sm back-link" href="/pt/" data-i18n="shared.back_home">← Voltar à página inicial</a>
       <h1 data-i18n="privacy.h1">Política de privacidade</h1>
       <p class="fine-print" data-i18n="legal.fr_prevails">Apenas a versão francesa desta página faz fé; as traduções são fornecidas a título informativo.</p>
-      <p class="updated" data-i18n="privacy.updated">Última atualização: julho de 2026.</p>
+      <p class="updated" data-i18n="privacy.updated">Última atualização: agosto de 2026.</p>
       <p data-i18n-html="privacy.intro">A presente política descreve como a <span class="cf-name">Captain<span class="cf-dot">.</span>Food</span> (a seguir «nós») recolhe e trata os teus dados pessoais quando nos contactas através do formulário deste site, no âmbito do piloto local realizado em Tours. Comprometemo-nos a respeitar o Regulamento Geral sobre a Proteção de Dados (RGPD) e a lei francesa «Informatique et Libertés» (informática e liberdades).</p>
       <h2 data-i18n="privacy.s1_title">1. Responsável pelo tratamento</h2>
       <p data-i18n-html="privacy.s1_body">O tratamento dos dados é assegurado pela <strong>associação Caring Hope Foundation</strong> — associação regida pela lei francesa de 1.<sup>o</sup> de julho de 1901 (o estatuto das associações sem fins lucrativos), registada sob o número <strong>RNA W372020229</strong>, estrutura que suporta o projeto <span class="cf-name">Captain<span class="cf-dot">.</span>Food</span>. Para qualquer questão relativa aos teus dados, podes escrever-nos para <a href="mailto:miam@captain.food">miam@captain.food</a>.</p>
+      <p data-i18n-html="privacy.s1_dpo">Não designámos um encarregado da proteção de dados (DPO): dada a natureza e o volume dos dados tratados neste piloto, não estão reunidas as condições de designação obrigatória previstas no artigo 37.º do RGPD. Os teus pedidos são tratados diretamente pela equipa do projeto, em <a href="mailto:miam@captain.food">miam@captain.food</a>.</p>
       <h2 data-i18n="privacy.s2_title">2. Dados recolhidos</h2>
       <p data-i18n="privacy.s2_intro">Através do formulário «Juntar-me ao piloto», recolhemos:</p>
       <ul>
@@ -87,7 +87,13 @@
       <h2 data-i18n="privacy.s4_title">4. Base legal</h2>
       <p data-i18n-html="privacy.s4_body">O tratamento assenta no teu <strong>consentimento</strong>, recolhido através da caixa de seleção do formulário. Podes retirar esse consentimento a qualquer momento (ver secção 7).</p>
       <h2 data-i18n="privacy.s5_title">5. Destinatários dos dados</h2>
-      <p data-i18n-html="privacy.s5_body">Os teus dados são acessíveis unicamente à equipa do projeto <span class="cf-name">Captain<span class="cf-dot">.</span>Food</span>. O formulário é tratado pelo nosso prestador técnico <strong>Formspree</strong> (transmissão e armazenamento das mensagens do formulário). Não vendemos, não alugamos nem cedemos os teus dados a nenhum terceiro para fins comerciais.</p>
+      <p data-i18n-html="privacy.s5_body">Os teus dados são acessíveis unicamente à equipa do projeto <span class="cf-name">Captain<span class="cf-dot">.</span>Food</span>. Para que este site funcione, recorremos aos seguintes prestadores técnicos, que tratam dados por nossa conta:</p>
+      <ul>
+        <li data-i18n-html="privacy.s5_li1"><strong>Formspree</strong> (Formspree, Inc., Estados Unidos) — transmissão e armazenamento das mensagens do formulário;</li>
+        <li data-i18n-html="privacy.s5_li2"><strong>GitHub Pages</strong> (GitHub, Inc., Estados Unidos) — alojamento do site; a esse título, são tratados dados técnicos de ligação (endereço IP, registos do servidor);</li>
+        <li data-i18n-html="privacy.s5_li3"><strong>Cloudflare Web Analytics</strong> (Cloudflare, Inc., Estados Unidos) — medição de audiência, sem cookies nem identificadores publicitários.</li>
+      </ul>
+      <p data-i18n="privacy.s5_nosale">Não vendemos, não alugamos nem cedemos os teus dados a nenhum terceiro para fins comerciais.</p>
       <p data-i18n-html="privacy.s5_whatsapp">Se te juntares à nossa comunidade no <strong>WhatsApp</strong> (canal facultativo), as tuas mensagens são aí tratadas pelo WhatsApp/Meta segundo as suas próprias condições de utilização. Nunca aí publicamos os teus contactos.</p>
       <h2 data-i18n="privacy.s6_title">6. Prazo de conservação</h2>
       <p data-i18n-html="privacy.s6_body">Os teus dados são conservados durante o piloto e, no máximo, <strong>24 meses</strong> após o teu último contacto connosco, sendo depois eliminados. Podes pedir a sua eliminação antes desse prazo.</p>
@@ -97,8 +103,12 @@
       <p data-i18n-html="privacy.s7_cnil">Se considerares, depois de nos contactares, que os teus direitos não são respeitados, podes apresentar uma reclamação à CNIL, a autoridade francesa de proteção de dados (<a href="https://www.cnil.fr" rel="noopener" target="_blank">www.cnil.fr</a>).</p>
       <h2 data-i18n="privacy.s8_title">8. Segurança</h2>
       <p data-i18n="privacy.s8_body">Aplicamos medidas razoáveis para proteger os teus dados contra qualquer acesso não autorizado. As comunicações com este site são cifradas (HTTPS).</p>
-      <h2 data-i18n="privacy.s9_title">9. Alterações</h2>
-      <p data-i18n="privacy.s9_body">Esta política poderá evoluir com o projeto. Qualquer atualização será publicada nesta página.</p>
+      <h2 data-i18n="privacy.s9_title">9. Passagem do projeto para uma nova estrutura</h2>
+      <p data-i18n-html="privacy.s9_p1"><span class="cf-name">Captain<span class="cf-dot">.</span>Food</span> é hoje conduzido pela associação <strong>Caring Hope Foundation</strong>. O projeto destina-se a ser retomado por uma <strong>estrutura dedicada</strong> — uma sociedade cooperativa de interesse coletivo (SCIC) ou uma estrutura equivalente, que visa a acreditação francesa ESUS — assim que esta for criada.</p>
+      <p data-i18n-html="privacy.s9_p2">Dizemos-te já, porque diz respeito aos teus dados: <strong>no dia em que essa estrutura existir, os dados recolhidos durante o piloto ser-lhe-ão transmitidos</strong>, para a mesma e única finalidade — continuar a conversa contigo sobre <span class="cf-name">Captain<span class="cf-dot">.</span>Food</span>. Nem as finalidades, nem os prazos de conservação, nem os teus direitos mudarão.</p>
+      <p data-i18n-html="privacy.s9_p3">Quando essa transmissão acontecer, informar-te-emos individualmente por email, indicando o nome, a forma jurídica e os contactos da nova estrutura — e poderás nesse momento retirar o teu consentimento ou pedir o apagamento dos teus dados, sem teres de te justificar. Se não quiseres esperar, podes dizer-nos hoje mesmo para <a href="mailto:miam@captain.food">miam@captain.food</a>: não transmitiremos nada a teu respeito.</p>
+      <h2 data-i18n="privacy.s10_title">10. Alterações</h2>
+      <p data-i18n="privacy.s10_body">Esta política poderá evoluir com o projeto. Qualquer atualização será publicada nesta página.</p>
       <p style="margin-top:2rem;">
         <a class="btn btn-navy" href="/pt/" data-i18n="shared.back_home">← Voltar à página inicial</a>
       </p>

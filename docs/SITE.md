@@ -259,8 +259,12 @@ Still missing, and **blocked on human verification** — do not draft it from
 assumptions: an **international-transfers section** naming, per processor
 (Formspree, GitHub, Cloudflare), whether the basis is a Data Privacy Framework
 certification or standard contractual clauses. Publishing an inaccurate
-statement there is worse than having no section. Also out of scope so far:
-DPIA, cookie banner (none needed today: no tracking cookie), Art. 30 register.
+statement there is worse than having no section. When you do that work, note
+that **Formspree receives data from four forms, not one**: the join form plus
+the three `demo/` mockup feedback forms (free-text message + optional email,
+behind the prototype gate — easy to miss, since `/demo/` itself is only the
+chooser and carries no form). Also out of scope so far: DPIA, cookie banner
+(none needed today: no tracking cookie), Art. 30 register.
 
 ## License & brand
 

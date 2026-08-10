@@ -26,9 +26,7 @@
   <link rel="alternate" hreflang="ar-LB" href="https://join.captain.food/ar-lb/privacy.html" />
   <link rel="alternate" hreflang="he" href="https://join.captain.food/he/privacy.html" />
   <link rel="alternate" hreflang="x-default" href="https://join.captain.food/confidentialite.html" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Poppins:wght@600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/fonts.css">
   <link rel="stylesheet" href="/styles.css">
   <style>
     .legal { padding-block: clamp(2.5rem, 6vw, 4rem); }
@@ -59,6 +57,7 @@
         <a class="chip" href="/ar-lb/pricing.html" data-i18n="nav.chip.pricing">الأسعار</a>
         <a class="chip" href="/demo/" data-i18n="nav.chip.mockups">النماذج</a>
         <a class="chip" href="/ar-lb/#faq" data-i18n="nav.chip.faq">أسئلة وأجوبة</a>
+        <a class="chip" href="/ar-lb/legal-notice.html" data-i18n="nav.chip.legal">البيانات القانونية</a>
       </div>
     </nav>
   </header>
@@ -67,10 +66,11 @@
       <a class="btn btn-navy btn-sm back-link" href="/ar-lb/" data-i18n="shared.back_home">→ رجاع عالصفحة الرئيسية</a>
       <h1 data-i18n="privacy.h1">سياسة الخصوصية</h1>
       <p class="fine-print" data-i18n="legal.fr_prevails">النسخة الفرنسية من هذه الصفحة هي وحدها المعتمدة؛ الترجمات مقدَّمة للاطلاع فقط.</p>
-      <p class="updated" data-i18n="privacy.updated">آخر تحديث: تموز/يوليو 2026.</p>
+      <p class="updated" data-i18n="privacy.updated">آخر تحديث: آب/أغسطس 2026.</p>
       <p data-i18n-html="privacy.intro">توضح هذه السياسة كيف يقوم <span class="cf-name">Captain<span class="cf-dot">.</span>Food</span> (والمشار إليه فيما يلي بـ« نحن ») بجمع بياناتك الشخصية ومعالجتها عندما تتواصل معنا عبر نموذج هذا الموقع، في إطار المشروع التجريبي المحلي في Tours. نلتزم باحترام اللائحة الأوروبية العامة لحماية البيانات (RGPD) والقانون الفرنسي « المعلوماتية والحريات ».</p>
       <h2 data-i18n="privacy.s1_title">1. المسؤول عن المعالجة</h2>
       <p data-i18n-html="privacy.s1_body">تتولى معالجة البيانات <strong>جمعية Caring Hope Foundation</strong> — جمعية خاضعة للقانون الفرنسي « loi du 1<sup>er</sup> juillet 1901 » (قانون الجمعيات غير الربحية)، مسجّلة تحت الرقم <strong>RNA W372020229</strong>، وهي الهيكل الحامل لمشروع <span class="cf-name">Captain<span class="cf-dot">.</span>Food</span>. لأي سؤال يتعلق ببياناتك، يمكنك مراسلتنا على <a href="mailto:miam@captain.food">miam@captain.food</a>.</p>
+      <p data-i18n-html="privacy.s1_dpo">ما عيّنّا مسؤول عن حماية البيانات (DPO): بالنظر لطبيعة البيانات يلّي منعالجها بهالمشروع التجريبي وحجمها، شروط التعيين الإلزامي بالمادة 37 من اللائحة العامة لحماية البيانات (GDPR) مش متوفرة. طلباتك بيتابعها فريق المشروع مباشرةً على <a href="mailto:miam@captain.food">miam@captain.food</a>.</p>
       <h2 data-i18n="privacy.s2_title">2. البيانات التي نجمعها</h2>
       <p data-i18n="privacy.s2_intro">عبر نموذج « الانضمام إلى المشروع التجريبي »، نجمع:</p>
       <ul>
@@ -87,7 +87,13 @@
       <h2 data-i18n="privacy.s4_title">4. الأساس القانوني</h2>
       <p data-i18n-html="privacy.s4_body">تقوم المعالجة على <strong>موافقتك</strong>، التي تُجمع عبر خانة الاختيار في النموذج. ويمكنك سحب هذه الموافقة في أي وقت (انظر القسم 7).</p>
       <h2 data-i18n="privacy.s5_title">5. الجهات التي تصلها البيانات</h2>
-      <p data-i18n-html="privacy.s5_body">بياناتك متاحة فقط لفريق مشروع <span class="cf-name">Captain<span class="cf-dot">.</span>Food</span>. تتم معالجة النموذج عبر مزوّدنا التقني <strong>Formspree</strong> (نقل رسائل النموذج وتخزينها). نحن لا نبيع بياناتك ولا نؤجّرها ولا نتنازل عنها لأي طرف ثالث لأغراض تجارية.</p>
+      <p data-i18n-html="privacy.s5_body">بياناتك متاحة بس لفريق مشروع <span class="cf-name">Captain<span class="cf-dot">.</span>Food</span>. ولتشغيل هالموقع منعتمد على مزوّدي الخدمات التقنية التاليين، يلّي بيعالجوا البيانات لحسابنا:</p>
+      <ul>
+        <li data-i18n-html="privacy.s5_li1"><strong>Formspree</strong> (‏Formspree, Inc.‎، الولايات المتحدة) — نقل رسائل النموذج وتخزينها؛</li>
+        <li data-i18n-html="privacy.s5_li2"><strong>GitHub Pages</strong> (‏GitHub, Inc.‎، الولايات المتحدة) — استضافة الموقع؛ وبهيك بتنعالج بيانات اتصال تقنية (عنوان IP وسجلات السيرفر)؛</li>
+        <li data-i18n-html="privacy.s5_li3"><strong>Cloudflare Web Analytics</strong> (‏Cloudflare, Inc.‎، الولايات المتحدة) — قياس الزيارات، بلا كوكيز وبلا معرّف إعلاني.</li>
+      </ul>
+      <p data-i18n="privacy.s5_nosale">نحن لا نبيع بياناتك ولا نؤجّرها ولا نتنازل عنها لأي طرف ثالث لأغراض تجارية.</p>
       <p data-i18n-html="privacy.s5_whatsapp">إذا انضممت إلى مجموعة النقاش الخاصة بنا على <strong>WhatsApp</strong> (قناة اختيارية)، فإن رسائلك هناك تُعالج من قبل WhatsApp/Meta وفق شروط الاستخدام الخاصة بها. ونحن لا ننشر فيها بيانات الاتصال الخاصة بك أبداً.</p>
       <h2 data-i18n="privacy.s6_title">6. مدة الاحتفاظ بالبيانات</h2>
       <p data-i18n-html="privacy.s6_body">نحتفظ ببياناتك طوال مدة المشروع التجريبي وبحد أقصى <strong>24 شهراً</strong> بعد آخر تواصل لك معنا، ثم تُحذف. ويمكنك طلب حذفها قبل هذه المهلة.</p>
@@ -97,8 +103,12 @@
       <p data-i18n-html="privacy.s7_cnil">إذا رأيت، بعد التواصل معنا، أن حقوقك غير محترمة، يمكنك تقديم شكوى إلى CNIL، الهيئة الفرنسية لحماية البيانات (<a href="https://www.cnil.fr" rel="noopener" target="_blank">www.cnil.fr</a>).</p>
       <h2 data-i18n="privacy.s8_title">8. الأمان</h2>
       <p data-i18n="privacy.s8_body">نطبّق تدابير معقولة لحماية بياناتك من أي وصول غير مصرّح به. والتبادلات مع هذا الموقع مشفّرة (HTTPS).</p>
-      <h2 data-i18n="privacy.s9_title">9. التعديلات</h2>
-      <p data-i18n="privacy.s9_body">قد تتطور هذه السياسة مع تطور المشروع. وسيُنشر أي تحديث على هذه الصفحة.</p>
+      <h2 data-i18n="privacy.s9_title">9. انتقال المشروع لهيكل جديد</h2>
+      <p data-i18n-html="privacy.s9_p1">مشروع <span class="cf-name">Captain<span class="cf-dot">.</span>Food</span> اليوم عم تحمله <strong>جمعية Caring Hope Foundation</strong>. والمشروع رح ينتقل لـ<strong>هيكل مخصّص</strong> — شركة تعاونية ذات نفع جماعي (SCIC) أو هيكل مماثل عم يسعى لاعتماد ESUS الفرنسي — أول ما ينوجد.</p>
+      <p data-i18n-html="privacy.s9_p2">منقلّك هلق لأنو الموضوع بيخص بياناتك: <strong>يوم ما يوجد هالهيكل، البيانات يلّي انجمعت خلال المشروع التجريبي رح تنتقل إلو</strong>، لنفس الغرض بالضبط — يعني نكمّل التواصل معك بخصوص <span class="cf-name">Captain<span class="cf-dot">.</span>Food</span>. لا الأغراض رح تتغير، ولا مدد الاحتفاظ، ولا حقوقك.</p>
+      <p data-i18n-html="privacy.s9_p3">لما يصير هالنقل، رح نعلمك شخصيًا بالإيميل، ومنعطيك اسم الهيكل الجديد وشكلو القانوني وبيانات التواصل معو — وساعتها فيك تسحب موافقتك أو تطلب حذف بياناتك، بلا ما تبرّر. وإذا ما بدك تنطر، فيك تخبرنا من اليوم على <a href="mailto:miam@captain.food">miam@captain.food</a>: ما رح ننقل شي يخصك.</p>
+      <h2 data-i18n="privacy.s10_title">10. التعديلات</h2>
+      <p data-i18n="privacy.s10_body">قد تتطور هذه السياسة مع تطور المشروع. وسيُنشر أي تحديث على هذه الصفحة.</p>
       <p style="margin-top:2rem;">
         <a class="btn btn-navy" href="/ar-lb/" data-i18n="shared.back_home">→ رجاع عالصفحة الرئيسية</a>
       </p>

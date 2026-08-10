@@ -26,9 +26,7 @@
   <link rel="alternate" hreflang="ar-LB" href="https://join.captain.food/ar-lb/privacy.html" />
   <link rel="alternate" hreflang="he" href="https://join.captain.food/he/privacy.html" />
   <link rel="alternate" hreflang="x-default" href="https://join.captain.food/confidentialite.html" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Poppins:wght@600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/fonts.css">
   <link rel="stylesheet" href="/styles.css">
   <style>
     .legal { padding-block: clamp(2.5rem, 6vw, 4rem); }
@@ -59,6 +57,7 @@
         <a class="chip" href="/en/pricing.html" data-i18n="nav.chip.pricing">Pricing</a>
         <a class="chip" href="/demo/" data-i18n="nav.chip.mockups">Mockups</a>
         <a class="chip" href="/en/#faq" data-i18n="nav.chip.faq">FAQ</a>
+        <a class="chip" href="/en/legal-notice.html" data-i18n="nav.chip.legal">Legal notice</a>
       </div>
     </nav>
   </header>
@@ -67,10 +66,11 @@
       <a class="btn btn-navy btn-sm back-link" href="/en/" data-i18n="shared.back_home">← Back to home</a>
       <h1 data-i18n="privacy.h1">Privacy policy</h1>
       <p class="fine-print" data-i18n="legal.fr_prevails">Only the French version of this page is authoritative; translations are provided for information purposes only.</p>
-      <p class="updated" data-i18n="privacy.updated">Last updated: July 2026.</p>
+      <p class="updated" data-i18n="privacy.updated">Last updated: August 2026.</p>
       <p data-i18n-html="privacy.intro">This policy describes how <span class="cf-name">Captain<span class="cf-dot">.</span>Food</span> (“we”, “us”) collects and processes your personal data when you contact us through this site's form, as part of the local pilot run in Tours. We are committed to complying with the EU General Data Protection Regulation (GDPR — “RGPD” in French) and the French Data Protection Act (“loi Informatique et Libertés”).</p>
       <h2 data-i18n="privacy.s1_title">1. Data controller</h2>
       <p data-i18n-html="privacy.s1_body">Data processing is carried out by the <strong>Caring Hope Foundation association</strong> — a non-profit governed by the French law of July 1<sup>st</sup>, 1901 (“association loi 1901”), registered under number <strong>RNA W372020229</strong>, the organization carrying the <span class="cf-name">Captain<span class="cf-dot">.</span>Food</span> project. For any question about your data, you can write to us at <a href="mailto:miam@captain.food">miam@captain.food</a>.</p>
+      <p data-i18n-html="privacy.s1_dpo">We have not appointed a data protection officer (DPO): given the nature and the volume of the data processed in this pilot, the mandatory-designation conditions of Article 37 GDPR are not met. Your requests are handled directly by the project team, at <a href="mailto:miam@captain.food">miam@captain.food</a>.</p>
       <h2 data-i18n="privacy.s2_title">2. Data we collect</h2>
       <p data-i18n="privacy.s2_intro">Through the “Join the pilot” form, we collect:</p>
       <ul>
@@ -87,7 +87,13 @@
       <h2 data-i18n="privacy.s4_title">4. Legal basis</h2>
       <p data-i18n-html="privacy.s4_body">Processing is based on your <strong>consent</strong>, given via the form's checkbox. You can withdraw this consent at any time (see section 7).</p>
       <h2 data-i18n="privacy.s5_title">5. Recipients of the data</h2>
-      <p data-i18n-html="privacy.s5_body">Your data is accessible only to the <span class="cf-name">Captain<span class="cf-dot">.</span>Food</span> project team. The form is processed by our technical provider <strong>Formspree</strong> (transmission and storage of form messages). We do not sell, rent or hand over your data to any third party for commercial purposes.</p>
+      <p data-i18n-html="privacy.s5_body">Your data is accessible only to the <span class="cf-name">Captain<span class="cf-dot">.</span>Food</span> project team. To run this site we rely on the following technical providers, which process data on our behalf:</p>
+      <ul>
+        <li data-i18n-html="privacy.s5_li1"><strong>Formspree</strong> (Formspree, Inc., United States) — transmission and storage of the form messages;</li>
+        <li data-i18n-html="privacy.s5_li2"><strong>GitHub Pages</strong> (GitHub, Inc., United States) — hosting of the site; in that capacity, technical connection data (IP address, server logs) is processed;</li>
+        <li data-i18n-html="privacy.s5_li3"><strong>Cloudflare Web Analytics</strong> (Cloudflare, Inc., United States) — audience measurement, with no cookie and no advertising identifier.</li>
+      </ul>
+      <p data-i18n="privacy.s5_nosale">We do not sell, rent or hand over your data to any third party for commercial purposes.</p>
       <p data-i18n-html="privacy.s5_whatsapp">If you join our discussion community on <strong>WhatsApp</strong> (an optional channel), your messages there are processed by WhatsApp/Meta under its own terms of use. We never publish your contact details there.</p>
       <h2 data-i18n="privacy.s6_title">6. Retention period</h2>
       <p data-i18n-html="privacy.s6_body">Your data is kept for the duration of the pilot and for a maximum of <strong>24 months</strong> after your last contact with us, then deleted. You can request its deletion before then.</p>
@@ -97,8 +103,12 @@
       <p data-i18n-html="privacy.s7_cnil">If, after contacting us, you believe your rights are not being respected, you can file a complaint with the CNIL, the French data protection authority (<a href="https://www.cnil.fr" rel="noopener" target="_blank">www.cnil.fr</a>).</p>
       <h2 data-i18n="privacy.s8_title">8. Security</h2>
       <p data-i18n="privacy.s8_body">We implement reasonable measures to protect your data against unauthorized access. Exchanges with this site are encrypted (HTTPS).</p>
-      <h2 data-i18n="privacy.s9_title">9. Changes</h2>
-      <p data-i18n="privacy.s9_body">This policy may evolve with the project. Any update will be published on this page.</p>
+      <h2 data-i18n="privacy.s9_title">9. Hand-over of the project to a new entity</h2>
+      <p data-i18n-html="privacy.s9_p1"><span class="cf-name">Captain<span class="cf-dot">.</span>Food</span> is today carried by the association <strong>Caring Hope Foundation</strong>. The project is meant to be taken over by a <strong>dedicated entity</strong> — a cooperative society of collective interest (SCIC) or an equivalent structure, aiming for the French ESUS accreditation — as soon as it is created.</p>
+      <p data-i18n-html="privacy.s9_p2">We are telling you now, because it concerns your data: <strong>the day that entity exists, the data collected during the pilot will be passed on to it</strong>, for the one and same purpose — carrying on the conversation with you about <span class="cf-name">Captain<span class="cf-dot">.</span>Food</span>. Neither the purposes, nor the retention periods, nor your rights will change.</p>
+      <p data-i18n-html="privacy.s9_p3">When that transfer happens, we will tell you individually by email, giving you the name, the legal form and the contact details of the new entity — and you will then be able to withdraw your consent or ask for your data to be deleted, without having to justify yourself. If you would rather not wait, you can tell us today at <a href="mailto:miam@captain.food">miam@captain.food</a>: we will pass on nothing about you.</p>
+      <h2 data-i18n="privacy.s10_title">10. Changes</h2>
+      <p data-i18n="privacy.s10_body">This policy may evolve with the project. Any update will be published on this page.</p>
       <p style="margin-top:2rem;">
         <a class="btn btn-navy" href="/en/" data-i18n="shared.back_home">← Back to home</a>
       </p>

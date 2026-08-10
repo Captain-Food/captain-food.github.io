@@ -72,8 +72,11 @@ captain-food.github.io/
 ├── .github/workflows/indexnow.yml      # pings IndexNow on push (host: join.captain.food)
 ├── 00f1c06…3f8b7.txt                   # IndexNow verification key
 ├── assets/                             # logo.png, favicon.png, og.png + captain-*.webp/png art
+│   ├── fonts.css                       # @font-face rules -- SELF-HOSTED Inter + Poppins
+│   └── fonts/*.woff2                   # the font files themselves (no Google request)
 ├── prospection/                        # A5 flyer (HTML + PDF) + QR code
 ├── LICENSE.md  LICENSES/AGPL-3.0.txt   # Captain.Food Coopyleft License (verbatim)
+│   LICENSES/OFL-1.1-{Inter,Poppins}.txt  # font licences (SIL OFL 1.1)
 ├── CNAME                               # custom domain: join.captain.food
 └── .claude/                            # Claude Code tooling that travels with the repo
     ├── agents/                         # vendored subagents (incl. custom "Yan" neuromarketing)
@@ -219,14 +222,45 @@ update the `data-cf-beacon` token in each page's `<head>`.
 4. **Enforce HTTPS:** tick **Settings → Pages → Enforce HTTPS** once the
    certificate is provisioned.
 
+## Fonts (self-hosted, on purpose)
+
+Inter and Poppins are served **from this origin** (`assets/fonts.css` +
+`assets/fonts/*.woff2`), never from `fonts.googleapis.com` / `fonts.gstatic.com`.
+Hot-linking Google Fonts sends every visitor's IP address to Google LLC before
+any interaction — a personal-data transfer we neither need nor disclose, and the
+cheapest one to remove outright. **Do not re-introduce a `fonts.g*` link** in a
+new page; add `<link rel="stylesheet" href="assets/fonts.css">` (root pages) or
+`../assets/fonts.css` (`demo/`, `prospection/`) before `styles.css`.
+Both faces are SIL OFL 1.1 (`LICENSES/OFL-1.1-Inter.txt`,
+`LICENSES/OFL-1.1-Poppins.txt`), which explicitly allows self-hosting. The
+`@font-face` rules — subsets, `unicode-range`, `font-display` — are the ones
+Google itself serves, with the `src` pointed at `assets/fonts/`; Inter is one
+variable file per subset (weights 100-900), Poppins static 600/700/800.
+
 ## Still to complete (legal)
 
 `mentions-legales.html` reflects the real publisher (association Caring Hope
 Foundation, RNA W372020229) but still needs the **siège social** (a
-non-personal address) and the **directeur de la publication**. Fill these in as
-soon as they're settled. The host block (GitHub Pages / GitHub, Inc.) is
-complete. The privacy notice (`confidentialite.html`) is real, working French
-RGPD copy — review the retention period (currently 24 months) if needed.
+non-personal address) and the **directeur de la publication** — both are
+**product-owner input**, do not invent them; an invented registered address is
+worse than a gap. The host block (GitHub Pages / GitHub, Inc.) is complete.
+It is now linked from the **top nav** (`nav.chip.legal`) as well as the footer.
+
+The privacy notice (`confidentialite.html`) is real, working French RGPD copy —
+review the retention period (currently 24 months) if needed. It states the
+processors that actually receive data (Formspree, GitHub Pages, Cloudflare Web
+Analytics), that no DPO is required at this scale (Art. 37 GDPR), and — section
+9 — that the data will pass to the future dedicated entity (SCIC/ESUS **aimed
+for**, never claimed) with individual notice and a right to opt out beforehand.
+That announcement is what makes the future hand-over lawful without
+re-consenting everyone, so **keep it accurate as the structure evolves**.
+
+Still missing, and **blocked on human verification** — do not draft it from
+assumptions: an **international-transfers section** naming, per processor
+(Formspree, GitHub, Cloudflare), whether the basis is a Data Privacy Framework
+certification or standard contractual clauses. Publishing an inaccurate
+statement there is worse than having no section. Also out of scope so far:
+DPIA, cookie banner (none needed today: no tracking cookie), Art. 30 register.
 
 ## License & brand
 

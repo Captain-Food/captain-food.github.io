@@ -26,9 +26,7 @@
   <link rel="alternate" hreflang="ar-LB" href="https://join.captain.food/ar-lb/privacy.html" />
   <link rel="alternate" hreflang="he" href="https://join.captain.food/he/privacy.html" />
   <link rel="alternate" hreflang="x-default" href="https://join.captain.food/confidentialite.html" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Poppins:wght@600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/fonts.css">
   <link rel="stylesheet" href="/styles.css">
   <style>
     .legal { padding-block: clamp(2.5rem, 6vw, 4rem); }
@@ -59,6 +57,7 @@
         <a class="chip" href="/zh/pricing.html" data-i18n="nav.chip.pricing">费用</a>
         <a class="chip" href="/demo/" data-i18n="nav.chip.mockups">产品原型</a>
         <a class="chip" href="/zh/#faq" data-i18n="nav.chip.faq">常见问题</a>
+        <a class="chip" href="/zh/legal-notice.html" data-i18n="nav.chip.legal">法律声明</a>
       </div>
     </nav>
   </header>
@@ -67,10 +66,11 @@
       <a class="btn btn-navy btn-sm back-link" href="/zh/" data-i18n="shared.back_home">← 返回首页</a>
       <h1 data-i18n="privacy.h1">隐私政策</h1>
       <p class="fine-print" data-i18n="legal.fr_prevails">本页仅以法语版本为准；译文仅供参考。</p>
-      <p class="updated" data-i18n="privacy.updated">最近更新：2026年7月。</p>
+      <p class="updated" data-i18n="privacy.updated">最近更新：2026年8月。</p>
       <p data-i18n-html="privacy.intro">本政策说明当你通过本网站表单联系我们时，<span class="cf-name">Captain<span class="cf-dot">.</span>Food</span>（以下称「我们」）如何在 Tours 本地试点项目的框架内收集和处理你的个人数据。我们承诺遵守欧盟《通用数据保护条例》（RGPD）及法国《信息与自由法》（« Informatique et Libertés »）。</p>
       <h2 data-i18n="privacy.s1_title">1. 数据控制者</h2>
       <p data-i18n-html="privacy.s1_body">数据处理由 <strong>Caring Hope Foundation 协会</strong>负责——一家受法国1901年7月1日《结社法》（loi du 1<sup>er</sup> juillet 1901）规范的协会，注册号为 <strong>RNA W372020229</strong>，是 <span class="cf-name">Captain<span class="cf-dot">.</span>Food</span> 项目的承载机构。关于你的数据的任何问题，都可以写信到 <a href="mailto:miam@captain.food">miam@captain.food</a>。</p>
+      <p data-i18n-html="privacy.s1_dpo">我们没有指定数据保护官（DPO）：鉴于本次试点所处理数据的性质和数量，未满足《GDPR》第 37 条规定的强制指定条件。你的请求由项目团队直接处理，联系地址：<a href="mailto:miam@captain.food">miam@captain.food</a>。</p>
       <h2 data-i18n="privacy.s2_title">2. 收集的数据</h2>
       <p data-i18n="privacy.s2_intro">通过「加入试点」表单，我们收集：</p>
       <ul>
@@ -87,7 +87,13 @@
       <h2 data-i18n="privacy.s4_title">4. 法律依据</h2>
       <p data-i18n-html="privacy.s4_body">数据处理基于你的<strong>同意</strong>，通过表单中的勾选框获取。你可以随时撤回该同意（见第7节）。</p>
       <h2 data-i18n="privacy.s5_title">5. 数据接收方</h2>
-      <p data-i18n-html="privacy.s5_body">你的数据仅 <span class="cf-name">Captain<span class="cf-dot">.</span>Food</span> 项目团队可以访问。表单由我们的技术服务商 <strong>Formspree</strong> 处理（负责表单消息的传输与存储）。我们绝不为商业目的向任何第三方出售、出租或转让你的数据。</p>
+      <p data-i18n-html="privacy.s5_body">你的数据仅 <span class="cf-name">Captain<span class="cf-dot">.</span>Food</span> 项目团队可以访问。为了运行本网站，我们使用以下技术服务商，它们代表我们处理数据：</p>
+      <ul>
+        <li data-i18n-html="privacy.s5_li1"><strong>Formspree</strong>（Formspree, Inc.，美国）——表单消息的传输与存储；</li>
+        <li data-i18n-html="privacy.s5_li2"><strong>GitHub Pages</strong>（GitHub, Inc.，美国）——网站托管；为此会处理技术连接数据（IP 地址、服务器日志）；</li>
+        <li data-i18n-html="privacy.s5_li3"><strong>Cloudflare Web Analytics</strong>（Cloudflare, Inc.，美国）——访问量统计，不使用 Cookie，也不使用广告标识符。</li>
+      </ul>
+      <p data-i18n="privacy.s5_nosale">我们绝不为商业目的向任何第三方出售、出租或转让你的数据。</p>
       <p data-i18n-html="privacy.s5_whatsapp">如果你加入我们在 <strong>WhatsApp</strong> 上的交流社区（选用渠道），你在其中的消息由 WhatsApp/Meta 按其自身使用条款处理。我们绝不会在其中公布你的联系方式。</p>
       <h2 data-i18n="privacy.s6_title">6. 保存期限</h2>
       <p data-i18n-html="privacy.s6_body">你的数据在试点期间保存，且自你与我们最后一次联系起最长保存 <strong>24个月</strong>，随后删除。你可以在此期限前要求删除。</p>
@@ -97,8 +103,12 @@
       <p data-i18n-html="privacy.s7_cnil">如果在联系我们之后，你认为自己的权利未得到尊重，可以向 CNIL（法国国家信息与自由委员会）提出投诉（<a href="https://www.cnil.fr" rel="noopener" target="_blank">www.cnil.fr</a>）。</p>
       <h2 data-i18n="privacy.s8_title">8. 安全</h2>
       <p data-i18n="privacy.s8_body">我们采取合理措施保护你的数据免遭未经授权的访问。与本网站的通信均经过加密（HTTPS）。</p>
-      <h2 data-i18n="privacy.s9_title">9. 政策变更</h2>
-      <p data-i18n="privacy.s9_body">本政策可能随项目发展而调整。任何更新都会发布在本页面上。</p>
+      <h2 data-i18n="privacy.s9_title">9. 项目移交给新的组织</h2>
+      <p data-i18n-html="privacy.s9_p1"><span class="cf-name">Captain<span class="cf-dot">.</span>Food</span> 目前由 <strong>Caring Hope Foundation</strong> 协会承担。项目计划在<strong>专门机构</strong>成立后由其接手——一家集体利益合作社（SCIC）或同等性质的机构，并以取得法国 ESUS 认证为目标。</p>
+      <p data-i18n-html="privacy.s9_p2">我们现在就告诉你，因为这关系到你的数据：<strong>该机构成立之日，试点期间收集的数据将移交给它</strong>，用途完全相同——继续就 <span class="cf-name">Captain<span class="cf-dot">.</span>Food</span> 与你保持交流。用途、保存期限和你的权利都不会改变。</p>
+      <p data-i18n-html="privacy.s9_p3">移交发生时，我们会通过电子邮件单独通知你，并告知新机构的名称、法律形式和联系方式——届时你可以撤回同意或要求删除你的数据，无需说明理由。如果你不想等，今天就可以写信到 <a href="mailto:miam@captain.food">miam@captain.food</a> 告诉我们：与你有关的任何内容都不会被移交。</p>
+      <h2 data-i18n="privacy.s10_title">10. 政策变更</h2>
+      <p data-i18n="privacy.s10_body">本政策可能随项目发展而调整。任何更新都会发布在本页面上。</p>
       <p style="margin-top:2rem;">
         <a class="btn btn-navy" href="/zh/" data-i18n="shared.back_home">← 返回首页</a>
       </p>
